@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-bee-yellow: #FFCB3C;
+  --color-bee-yellow-dark:#F5BB28;
+  --color-bee-brown:#43280D;
+ 
+ 
+}
