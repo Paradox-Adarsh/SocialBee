@@ -1,6 +1,7 @@
 import React from 'react'
 import authenticateBg from '../../assets/images/authenticate/authenticate_bg.png'
 import Login from './Login'
+import Register from './Register'
 
 const Authenticate = () => {
   return (
@@ -22,7 +23,9 @@ const Authenticate = () => {
           <h1 className='text-center text-bee-brown text-3xl'>Bee Social</h1>
           <p className="text-center text-sm w-[70%]">Connecting lives , Sharing Stories : Your World</p>
         </div>
-        <Login/>
+        {/* <Login/> */}
+        <Register/>
+        
         
       </div>
    
