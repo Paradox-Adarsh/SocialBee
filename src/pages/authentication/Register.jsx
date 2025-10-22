@@ -5,6 +5,8 @@ import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import RadioGroup from "@mui/material/RadioGroup";
 import Radio from "@mui/material/Radio";
+import { useDispatch } from "react-redux";
+import { registerActionUser } from "../../Redux/Auth/auth.action";
 
 const initialValues = {
   firstName: "",
@@ -25,8 +27,11 @@ const validationSchema = Yup.object({
 });
 
 const Register = () => {
+
+  const dispatch = useDispatch();
   const handleSubmit = (values) => {
     console.log("Form values:", values);
+    dispatch(registerActionUser({data:values}));
   };
 
   return (
